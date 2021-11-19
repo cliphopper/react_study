@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ====================
+	base
+	==================== */
+html {
+    margin: 0;padding:0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol,figure {
+    margin: 0;
+}
+body {
+    margin: 0;padding:0;
+    font-family: "Hiragino Kaku Gothic Pro","Yu Gothic","Meiryo",sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+    background:#f5f5f5;   
+}
+  @media screen and (min-width: 768px) {
+    body {
+      font-size: 18px; 
+    } }
+a {
+  text-decoration: none; }
+
+/* ====================
+	user base
+	==================== */
+#header  {
+    margin:0; padding:0;
+    width:100%;
+    min-height:30px;
+    background:#553377;
+    color:#fff;
+    font-size:1em;
+    display: flex;
+    flex-direction : row-reverse;
+    overflow:hidden;
+}
+#header div{
+    margin: 5px;
+}
+#container{
+    width:100%;
+}
+
+/* ====================
+	home layout
+	==================== */
+#main_visual{
+    width:100%;
+    height: 300px;
+	background: url(../img/Fotolia_73018885_S.jpg) center no-repeat;
+    background-size: 100%; 
+    background-position-y:center;
+    text-align:center;
+    margin:100px 0 0 0;
+    padding-top:100px;
+}
+
+#main_visual p{
+    color:#fff;
+    font-size:40px;
+    font-family:'Courier',sans-serif;
+    font-weight:600;
+}
+
+#search_container{
+    margin: 10px;
+    border:#ccc 3px dotted;
+    text-align:center;
+}
+
+#search_container p{
+    color:#ccc;
+    font-size:40px;
+    margin:5px auto 30px;
+    font-family:'Courier',sans-serif;
+    font-weight:600;
+}
+
+/* ====================
+	card layout -1
+	==================== */
+#card_content  { 
+    width:100%;
+    font-size:1.1em;
+    margin: 20px 0;
+}
+.flex_container {
+    width:98%;
+    margin: 0 auto;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+}
+  @media screen and (min-width: 768px) {
+    .flex_container {
+        flex-direction : row;
+        align-items: stretch;
+    } }
+
+.plain_card {
+    font-size: 0.8em;
+    background: #fff;
+    width: 100%;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    flex-direction : row;
+}
+  @media screen and (min-width: 768px) {
+    .plain_card {
+        width: 250px;
+        min-width:250px;
+        flex-direction : column;
+    } }
+
+.img_cont{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  @media screen and (min-width: 768px) {
+    .img_cont {
+        width: 100%;
+        height: 150px;
+        flex-direction : column;
+    } }
+
+.fit_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.txt_cont{
+    margin:10px;
+}
+.plain_list {
+    font-size: 0.8em;
+    margin-left: -1.5em;
+}
+
+
+
+
